@@ -33,7 +33,7 @@ Xnew = preprocess.transform(Xnew)
 Xnew = np.delete(Xnew, [0,3], 1)
 
 new_prediction = classifier.predict(Xnew)
-#
-# new_prediction = (new_prediction > 0.5)
-#
-# print(new_prediction)
+
+new_prediction = (new_prediction > 0.5)
+
+print(new_prediction)
